@@ -31,30 +31,30 @@ NetISP = script-name=NetISP,update-interval=43200
 
 [Script]
 # 附带重载配置,Surge Pro标题,可显示启动时间,点击刷新为重载配置
-functionstatus = type=generic, script-path=https://blacknwarrior.github.io/surge/scripts/functionstatus.js
+functionstatus = type=generic, script-path=https://bberxx.github.io/surge/scripts/functionstatus.js
 
 # 机场信息, 必须修改的字段:你encode后的机场订阅链接
-Sub_info = type=generic,timeout=10,script-path=https://blacknwarrior.github.io/surge/scripts/sub_info_panel.js,script-update-interval=0
+Sub_info = type=generic,timeout=10,script-path=https://bberxx.github.io/surge/scripts/sub_info_panel.js,script-update-interval=0
 
 # 流量统计 点击以切换网络界面
-TrafficStatistics = type=generic,timeout=10,script-path=https://blacknwarrior.github.io/surge/scripts/trafficstatistics.js,argument=icon=link.icloud&color=#FFD700
+TrafficStatistics = type=generic,timeout=10,script-path=https://bberxx.github.io/surge/scripts/trafficstatistics.js,argument=icon=link.icloud&color=#FFD700
 
 # 网络详情 标题显示为根节点名
-network-info =script-path=https://blacknwarrior.github.io/surge/scripts/network-info.js,type=generic,timeout=30
+network-info =script-path=https://bberxx.github.io/surge/scripts/network-info.js,type=generic,timeout=30
 
 # flushDNS
-flushDNS = type=generic,timeout=5,script-path=https://blacknwarrior.github.io/surge/scripts/flushDNS.js,argument=title=DNS FLush&icon=wand.and.stars.inverse&color=#FFD700
+flushDNS = type=generic,timeout=5,script-path=https://bberxx.github.io/surge/scripts/flushDNS.js,argument=title=DNS FLush&icon=wand.and.stars.inverse&color=#FFD700
 
-weather=type=generic,script-path=https://blacknwarrior.github.io/surge/scripts/weather.js,argument=icon=sun.max.fill&color=#FFD700&cityId=101280800
+weather=type=generic,script-path=https://bberxx.github.io/surge/scripts/weather.js,argument=icon=sun.max.fill&color=#FFD700&cityId=101280800
 
 #货币汇率
-Currency Exchange Rates = type=generic,timeout=10,script-path=https://blacknwarrior.github.io/surge/scripts/exchange.js
+Currency Exchange Rates = type=generic,timeout=10,script-path=https://bberxx.github.io/surge/scripts/exchange.js
 
 #显示本省实时油价
-YJ = type=generic,timeout=5,script-path=https://blacknwarrior.github.io/surge/scripts/youjia.js
+YJ = type=generic,timeout=5,script-path=https://bberxx.github.io/surge/scripts/youjia.js
 
 # 节假日提醒
-timecard = type=generic,timeout=10,script-path=https://blacknwarrior.github.io/surge/scripts/timecard.js
+timecard = type=generic,timeout=10,script-path=https://bberxx.github.io/surge/scripts/timecard.js
 
 CNPing = type=generic,timeout=5,script-path=https://github.com/Keywos/rule/raw/main/JS/CNPing.js
 
