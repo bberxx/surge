@@ -1,9 +1,19 @@
 #!name=Block Advertising
 #!desc=Block Advertising
+#!system=ios
 
 [URL Rewrite]
-# > JiaoGuan12123 - gab.122.gov.cn
-^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery - reject
+#!name=Wikiwand(by DivineEngine)
+#!desc=Wikipedia to Wikiwand
+#hostname = %INSERT% *.wikipedia.org,*.wikiwand.com
+^https://zh.(m.)?wikipedia.org/zh(-\w*)?(?=/) https://www.wikiwand.com/zh$2 302
+^https://(\w*).(m.)?wikipedia.org/wiki https://www.wikiwand.com/$1 302
+
+[Script]
+#!name=Wechat (@ Choler&NobyDa)
+#!desc=去微信公众号广告
+#hostname = mp.weixin.qq.com
+http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
 
 [MITM]
-hostname = %APPEND% gab.122.gov.cn
+hostname = %APPEND% *.wikipedia.org,*.wikiwand.com, mp.weixin.qq.com
