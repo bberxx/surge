@@ -18,3 +18,4 @@ http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,m
 [MITM]
 hostname = %APPEND% *.wikipedia.org,*.wikiwand.com, mp.weixin.qq.com
 
+
