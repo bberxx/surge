@@ -5,12 +5,6 @@
 [URL Rewrite]
 #!name=金十数据
 #hostname = %APPEND% jad-api.jin10.com
-#!desc=开屏广告和应用内弹窗
-^https?:\/\/jad-api\.jin10\.com\/ad - reject
-
-[Map Local]
-# 开屏广告
-^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlecommerce\.splash\.ads data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 [Script]
 #!name=Wechat (@ Choler&NobyDa)
@@ -19,7 +13,8 @@
 http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
 
 [MITM]
-hostname = %APPEND% mp.weixin.qq.com, jad-api.jin10.com, acs.m.goofish.com, g-acs.m.goofish.com
+hostname = %APPEND% mp.weixin.qq.com, jad-api.jin10.com
+
 
 
 
