@@ -4,7 +4,10 @@
 
 [URL Rewrite]
 #!name=金十数据
+#!desc=开屏广告和应用内弹窗
 #hostname = %APPEND% jad-api.jin10.com
+^https?:\/\/jad-api\.jin10\.com\/ad - reject
+
 
 [Script]
 #!name=Wechat (@ Choler&NobyDa)
@@ -14,6 +17,7 @@ http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,m
 
 [MITM]
 hostname = %APPEND% mp.weixin.qq.com, jad-api.jin10.com
+
 
 
 
