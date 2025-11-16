@@ -2,13 +2,6 @@
 #!desc=anti-ad
 #!system=ios
 
-[URL Rewrite]
-#!name=金十数据
-#!desc=开屏广告和应用内弹窗
-#hostname = %APPEND% jad-api.jin10.com
-^https?:\/\/jad-api\.jin10\.com\/ad - reject
-
-
 [Script]
 #!name=Wechat (@ Choler&NobyDa)
 #!desc=去微信公众号广告
@@ -16,7 +9,8 @@
 http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
 
 [MITM]
-hostname = %APPEND% mp.weixin.qq.com, jad-api.jin10.com
+hostname = %APPEND% mp.weixin.qq.com
+
 
 
 
