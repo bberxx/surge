@@ -7,7 +7,10 @@
 DOMAIN-SUFFIX,*.futunn.com
 DOMAIN-SUFFIX,*.moomoo.com
 DOMAIN-SUFFIX,*.futubull.com
+
 DOMAIN-SUFFIX,time*.cloud.tencent.com:123
+
+DOMAIN-SUFFIX,appsflyersdk.com
 
 DOMAIN-SUFFIX,futuhk.com
 DOMAIN-SUFFIX,futu.link
