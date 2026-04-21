@@ -4,6 +4,10 @@
 # NAME: futunn
 # AUTHOR: Leo
 # NAME: futu
+DOMAIN-SUFFIX,*.futunn.com
+DOMAIN-SUFFIX,*.moomoo.com
+DOMAIN-SUFFIX,*.futubull.com
+
 DOMAIN-SUFFIX,futuhk.com
 DOMAIN-SUFFIX,futu.link
 DOMAIN-SUFFIX,futunn.com
