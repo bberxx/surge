@@ -4,7 +4,7 @@
 # NAME: futunn
 # AUTHOR: Leo
 # NAME: futu
-
+DOMAIN-SUFFIX,static.futunn.com
 DOMAIN-SUFFIX,api.futunn.com
 DOMAIN-SUFFIX,auth.futunn.com
 DOMAIN-SUFFIX,collect.futunn.com
